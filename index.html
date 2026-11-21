@@ -2,27 +2,13 @@
 <html lang="ar" dir="rtl">
 <head>
   <meta name="google-site-verification" content="FsWNXbEa2-k4kh6ZD5rnAezv_tG7N7zMLectIvc9_Dk" />
-  <script async src="https://www.googletagmanager.com/gtm.js?id=GTM-N772TCBX"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-</script>
-  
-  <script async src="https://www.googletagmanager.com/gtm.js?id=GTM-PML9TR8T"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-  </script>
   <meta name="google-site-verification" content="f8DbpT_KntrEpZ-VksBHYT-74dE8stXJyg8iQTwD8CQ" />
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>مركز صيانة اريستون - Ariston Maintenance Center</title>
-  <meta name="description" content="مركز صيانة اريستون المتخصص. صيانة غسالات اريستون، صيانة ثلاجات اريستون، صيانة سخانات، بوتاجازات، وتكييفات Ariston في القاهرة، الجيزة والإسكندرية.">
+  <meta name="description" content="مركز صيانة اريستون المتخصص. صيانة غسالات اريستون، صيانة ثلاجات اريستون، سخانات، بوتاجازات، وتكييفات Ariston في القاهرة، الجيزة والإسكندرية.">
   <meta name="robots" content="index, follow, max-image-preview:large">
   <link rel="canonical" href="https://ariston.maintenance-eg.net/">
-  <link rel="alternate" href="https://maps.google.com/?cid=4855018659132170151" />
 
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -51,6 +37,9 @@
     }
   </script>
   <style>
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
     body {
       font-family: 'Cairo', sans-serif;
       scroll-behavior: smooth;
@@ -65,14 +54,14 @@
     }
   </style>
 
-  <!-- Complete JSON-LD LocalBusiness & FAQ Schema with Exact CID 0x42ea8c4791adf3a7 & 70 Areas -->
+  <!-- Unified JSON-LD Schema Graph -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@graph": [
       {
-        "@type": ["HomeAndConstructionBusiness", "LocalBusiness"],
-        "@id": "https://maps.google.com/?cid=4855018659132170151#business",
+        "@type": "LocalBusiness",
+        "@id": "https://ariston.maintenance-eg.net/#business",
         "name": "مركز صيانة اريستون - Ariston Maintenance Center",
         "alternateName": [
           "مركز صيانة اريستون",
@@ -80,9 +69,7 @@
           "صيانة ثلاجات اريستون",
           "Ariston Maintenance Center Cairo Giza Alexandria"
         ],
-        "businessStatus": "https://schema.org/BusinessStatusActive",
         "url": "https://ariston.maintenance-eg.net/",
-        "hasMap": "https://maps.google.com/?cid=4855018659132170151",
         "priceRange": "$$",
         "image": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=1200&q=80",
         "address": {
@@ -117,6 +104,48 @@
         ]
       },
       {
+        "@type": "Service",
+        "@id": "https://ariston.maintenance-eg.net/#service-washers",
+        "name": "صيانة غسالات اريستون",
+        "serviceType": "إصلاح وصيانة غسالات الملابس والمجففات",
+        "provider": {"@id": "https://ariston.maintenance-eg.net/#business"}
+      },
+      {
+        "@type": "Service",
+        "@id": "https://ariston.maintenance-eg.net/#service-fridges",
+        "name": "صيانة ثلاجات اريستون",
+        "serviceType": "إصلاح وصيانة الثلاجات والديب فريزر",
+        "provider": {"@id": "https://ariston.maintenance-eg.net/#business"}
+      },
+      {
+        "@type": "Service",
+        "@id": "https://ariston.maintenance-eg.net/#service-heaters",
+        "name": "صيانة سخانات اريستون",
+        "serviceType": "إصلاح وصيانة السخانات",
+        "provider": {"@id": "https://ariston.maintenance-eg.net/#business"}
+      },
+      {
+        "@type": "Service",
+        "@id": "https://ariston.maintenance-eg.net/#service-cookers",
+        "name": "صيانة بوتاجازات وأفران اريستون",
+        "serviceType": "إصلاح وصيانة البوتاجازات والأفران",
+        "provider": {"@id": "https://ariston.maintenance-eg.net/#business"}
+      },
+      {
+        "@type": "Service",
+        "@id": "https://ariston.maintenance-eg.net/#service-ac",
+        "name": "صيانة تكييفات اريستون",
+        "serviceType": "إصلاح وصيانة أجهزة التكييف",
+        "provider": {"@id": "https://ariston.maintenance-eg.net/#business"}
+      },
+      {
+        "@type": "Service",
+        "@id": "https://ariston.maintenance-eg.net/#service-dishwashers-microwaves",
+        "name": "صيانة غسالات أطباق وميكروويف اريستون",
+        "serviceType": "إصلاح وصيانة غسالات الأطباق والميكروويف",
+        "provider": {"@id": "https://ariston.maintenance-eg.net/#business"}
+      },
+      {
         "@type": "FAQPage",
         "@id": "https://ariston.maintenance-eg.net/#faq",
         "mainEntity": [
@@ -133,10 +162,92 @@
             "name": "ما هي المناطق التي تغطيها خدمة صيانة اريستون؟",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "نقدم خدمات الصيانة الفورية في كافة أحياء ومناطق القاهرة، الجيزة، والإسكندرية بالكامل."
+              "text": "نقدم خدمات الصيانة في القاهرة بالكامل، الجيزة، والإسكندرية بكافة أحيائها."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "هل يجب نقل الجهاز إلى مقر المركز لإصلاحه؟",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "إطلاقاً، خدماتنا معتمدة ويتم فحص وإصلاح أجهزة اريستون Ariston أمام عينيك دون أي نقل."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "كيف يمكنني طلب خدمة صيانة أجهزة اريستون عبر واتساب؟",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "يمكنك بكل سهولة التواصل معنا عبر زر واتساب المباشر بالموقع أو إرسال تفاصيل عطل جهاز Ariston وعنوانك لتنسيق الزيارة."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "ما هي أنواع أجهزة Ariston التي يشملها الدعم الفني؟",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "نغطي كافة أجهزة اريستون وتشمل: غسالات الملابس، الثلاجات، السخانات، البوتاجازات وأفران بلت إن، وغسالات الأطباق."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "كم يستغرق وصول الفني المتخصص بعد تسجيل الطلب؟",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "بفضل الانتشار الجغرافي لفرقنا، يصلكم الفني غالباً في نفس اليوم أو خلال ساعات معدودة من تأكيد الطلب."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "هل قطع الغيار المستخدمة في صيانة اريستون مطابقة للمواصفات؟",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "نعم، نحرص على تزويد فنيينا بقطع غيار بديلة عالية الجودة ومطابقة لمواصفات التشغيل الخاصة بأجهزة Ariston."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "ما هي مواعيد العمل الرسمية واستقبال طلبات الدعم؟",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "نستقبل رسائلكم واستفساراتكم وطلبات الصيانة يومياً من الساعة 08:00 صباحاً وحتى الساعة 01:00 بعد منتصف الليل."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "هل يتم تقديم إيصال خدمة ومتابعة دورية بعد إتمام الإصلاح؟",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "نعم، يتسلم العميل إيصال خدمة ومتابعة دورية بعد الانتهاء من أعمال الإصلاح وتركيب قطع الغيار."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "لماذا تختار مركز صيانة اريستون للأجهزة المنزلية؟",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "لأننا نوفر سرعة الاستجابة، الفحص في القاهرة والجيزة والإسكندرية، والاعتماد على مهندسين ذوي خبرة عالية."
             }
           }
         ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://ariston.maintenance-eg.net/#website",
+        "url": "https://ariston.maintenance-eg.net/",
+        "name": "مركز صيانة اريستون - Ariston Maintenance Center",
+        "inLanguage": "ar-EG",
+        "publisher": {"@id": "https://ariston.maintenance-eg.net/#business"}
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://ariston.maintenance-eg.net/#webpage",
+        "url": "https://ariston.maintenance-eg.net/",
+        "name": "مركز صيانة اريستون - Ariston Maintenance Center",
+        "inLanguage": "ar-EG",
+        "isPartOf": {"@id": "https://ariston.maintenance-eg.net/#website"},
+        "about": {"@id": "https://ariston.maintenance-eg.net/#business"},
+        "mainEntity": {"@id": "https://ariston.maintenance-eg.net/#business"}
       }
     ]
   }
@@ -149,7 +260,7 @@
     <div class="max-w-6xl mx-auto flex flex-wrap items-center justify-between gap-2">
       <div class="flex items-center gap-2">
         <span class="inline-block w-2.5 h-2.5 rounded-full bg-emerald-500 animate-ping"></span>
-        <span class="font-bold text-white">خدمة دعم فني فورية 100% لأجهزة Ariston (تغطية شاملة للقاهرة، الجيزة، والإسكندرية)</span>
+        <span class="font-bold text-white">خدمة دعم فني لأجهزة Ariston (تغطية شاملة للقاهرة، الجيزة، والإسكندرية)</span>
         <span class="text-slate-400">| الفني يصلك لباب البيت بأحدث معدات الفحص</span>
       </div>
       <div class="flex items-center gap-4 text-xs font-semibold text-amber-400">
@@ -176,7 +287,7 @@
       </div>
 
       <div class="flex items-center gap-2 sm:gap-3">
-        <a href="https://wa.me/201156174546" target="_blank" class="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white font-bold px-4 py-2.5 rounded-xl shadow-sm text-sm transition-all pulsing-wa">
+        <a href="https://wa.me/201156174546" target="_blank" rel="noopener" class="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white font-bold px-4 py-2.5 rounded-xl shadow-sm text-sm transition-all pulsing-wa">
           <i class="fa-brands fa-whatsapp text-lg"></i>
           <span>تواصل عبر واتساب</span>
         </a>
@@ -201,11 +312,11 @@
         </h1>
         
         <p class="text-base sm:text-lg text-slate-300 font-normal leading-relaxed mb-4 max-w-3xl mx-auto">
-          نرحب بكم في <a href="https://ariston.maintenance-eg.net/" class="text-rose-300 font-bold hover:underline">مركز صيانة اريستون</a> المتخصص، الوجهة الأولى والأكثر احترافية لتقديم خدمات الصيانة الفورية والشاملة لكافة الأجهزة. نحن متخصصون في تقديم خدمات <a href="#services" class="text-rose-300 font-bold hover:underline">صيانة غسالات اريستون</a>، <a href="#services" class="text-rose-300 font-bold hover:underline">صيانة ثلاجات اريستون</a>، <a href="#services" class="text-rose-300 font-bold hover:underline">صيانة سخانات اريستون</a>، <a href="#services" class="text-rose-300 font-bold hover:underline">صيانة بوتاجازات وأفران اريستون بلت إن</a>، فضلاً عن <a href="#services" class="text-rose-300 font-bold hover:underline">صيانة تكييفات Ariston</a> وغسالات الأطباق والميكروويف بجودة لا مثيل لها. ننتشر بكثافة في كافة أحياء ومناطق القاهرة، الجيزة، والإسكندرية لنلبي استغاثتكم في أسرع وقت ممكن. يعتمد <a href="https://ariston.maintenance-eg.net/" class="text-rose-300 font-bold hover:underline">مركز صيانة اريستون الرئيسي</a> على نخبة من أمهر المهندسين والفنيين المزودين بأحدث أجهزة الفحص الإلكتروني والتشخيص الرقمي المتقدم لاكتشاف الأسباب الجذرية للأعطال بدقة متناهية وإصلاحها فوراً دون الحاجة نهائياً لنقل الجهاز أو تعريضه لمخاطر النقل والخدش. هدفنا الأساسي هو إعادة جهازك للعمل بكفاءة التشغيل القياسية كالجديد تماماً، مع تقديم إيصال خدمة ومتابعة دورية مستمرة لضمان راحتكم وسلامة أجهزتكم على مدار الساعة طوال أيام الأسبوع.
+          نرحب بكم في <a href="https://ariston.maintenance-eg.net/" class="text-rose-300 font-bold hover:underline">مركز صيانة اريستون</a> المتخصص لتقديم خدمات الصيانة لكافة الأجهزة. نحن متخصصون في تقديم خدمات <a href="#services" class="text-rose-300 font-bold hover:underline">صيانة غسالات اريستون</a>، <a href="#services" class="text-rose-300 font-bold hover:underline">صيانة ثلاجات اريستون</a>، <a href="#services" class="text-rose-300 font-bold hover:underline">صيانة سخانات اريستون</a>، <a href="#services" class="text-rose-300 font-bold hover:underline">صيانة بوتاجازات وأفران اريستون بلت إن</a>، فضلاً عن <a href="#services" class="text-rose-300 font-bold hover:underline">صيانة تكييفات Ariston</a> وغسالات الأطباق والميكروويف. ننتشر في أحياء ومناطق القاهرة، الجيزة، والإسكندرية لتنسيق الزيارات حسب المواعيد المتاحة. يعتمد <a href="https://ariston.maintenance-eg.net/" class="text-rose-300 font-bold hover:underline">مركز صيانة اريستون</a> على فنيين مزودين بأجهزة الفحص والتشخيص لاكتشاف الأعطال وإصلاحها في المنزل قدر الإمكان دون الحاجة لنقل الجهاز أو تعريضه لمخاطر النقل. نقدم إيصال خدمة ومتابعة دورية لضمان متابعة أعمال الصيانة يومياً من الساعة 08:00 صباحاً حتى 01:00 صباحاً.
         </p>
 
         <div class="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 mb-6">
-          <a href="https://wa.me/201156174546" target="_blank" class="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-emerald-600 hover:bg-emerald-700 text-white font-black text-base sm:text-lg px-8 py-4 rounded-2xl shadow-xl shadow-emerald-600/30 transition-all transform hover:-translate-y-0.5 pulsing-wa">
+          <a href="https://wa.me/201156174546" target="_blank" rel="noopener" class="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-emerald-600 hover:bg-emerald-700 text-white font-black text-base sm:text-lg px-8 py-4 rounded-2xl shadow-xl shadow-emerald-600/30 transition-all transform hover:-translate-y-0.5 pulsing-wa">
             <i class="fa-brands fa-whatsapp text-2xl"></i>
             <span>التواصل المباشر عبر واتساب</span>
           </a>
@@ -218,7 +329,7 @@
         <div class="flex flex-wrap items-center justify-center gap-4 text-xs text-slate-400">
           <span class="flex items-center gap-1.5"><i class="fa-solid fa-ban text-rose-400"></i> فحص دقيق بأحدث المعدات</span>
           <span class="flex items-center gap-1.5"><i class="fa-solid fa-file-shield text-emerald-400"></i> إيصال خدمة ومتابعة دورية</span>
-          <span class="flex items-center gap-1.5"><i class="fa-solid fa-clock text-amber-400"></i> خدمة فورية حتى 01:00 صباحاً</span>
+          <span class="flex items-center gap-1.5"><i class="fa-solid fa-clock text-amber-400"></i> خدمة يومية حتى 01:00 صباحاً</span>
         </div>
       </div>
     </div>
@@ -230,10 +341,10 @@
       <div class="text-center mb-12">
         <span class="text-xs sm:text-sm font-bold text-aristonRed uppercase tracking-wider">كتالوج الخدمات والأجهزة</span>
         <h2 class="text-2xl sm:text-4xl font-extrabold text-slate-900 mt-2">
-          خدمات صيانة أجهزة اريستون Ariston - دليل الأعطال والإصلاح الشامل
+          خدمات صيانة أجهزة اريستون Ariston - دليل الأعطال والإصلاح
         </h2>
         <p class="text-slate-600 text-sm max-w-2xl mx-auto mt-2">
-          تعرف على أبرز خدمات صيانة غسالات اريستون، صيانة ثلاجات اريستون، وكافة أجهزة Ariston وكيفية علاجها من خلال فريقنا المتخصص في القاهرة، الجيزة، والإسكندرية.
+          تعرف على أبرز خدمات صيانة غسالات اريستون، صيانة ثلاجات اريستون، وكافة أجهزة Ariston في القاهرة، الجيزة، والإسكندرية.
         </p>
       </div>
 
@@ -249,11 +360,11 @@
               <a href="#booking-section" class="hover:text-aristonRed transition-colors">صيانة غسالات اريستون - Ariston Washing Machines</a>
             </h3>
             <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-4">
-              نقدم في <a href="https://ariston.maintenance-eg.net/" class="text-aristonRed font-bold hover:underline">مركز صيانة غسالات اريستون</a> خدمات تصليح وفحص فوري لكافة موديلات غسالات الملابس أوتوماتيك وفوق أوتوماتيك ومجففات Ariston. نعتمد على أحدث أجهزة الكشف الإلكتروني لبرمجة الكارتات، فحص الحلة، واستبدال قطع الغيار التالفة بأخرى مطابقة للمواصفات لضمان عمل الغسالة بأعلى كفاءة واستقرار دون الحاجة نهائياً لنقل الجهاز.
+              نقدم في <a href="https://ariston.maintenance-eg.net/" class="text-aristonRed font-bold hover:underline">مركز صيانة غسالات اريستون</a> خدمات فحص وإصلاح موديلات غسالات الملابس أوتوماتيك وفوق أوتوماتيك ومجففات Ariston. نعتمد على أجهزة الكشف لفحص الكارتات والحلة واستبدال قطع الغيار التالفة بأخرى مطابقة للمواصفات دون الحاجة لنقل الجهاز قدر الإمكان.
             </p>
             <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 text-xs text-slate-700 mb-5">
-              <strong class="text-slate-900 block mb-1.5 font-bold"><i class="fa-solid fa-triangle-exclamation text-amber-500 ml-1"></i> أبرز الأعطال المعالجة بدقة:</strong>
-              توقف الحلة عن الدوران، تلف طلمبة الصرف، تسريب المياه من الجوان أو القاعدة، أصوات الاهتزاز المرتفعة أثناء العصر، وعلاج أكواد الخطأ المتكررة في الكارتة الإلكترونية.
+              <strong class="text-slate-900 block mb-1.5 font-bold"><i class="fa-solid fa-triangle-exclamation text-amber-500 ml-1"></i> أبرز الأعطال المعالجة:</strong>
+              توقف الحلة عن الدوران، تلف طلمبة الصرف، تسريب المياه من الجوان أو القاعدة، أصوات الاهتزاز أثناء العصر، وعلاج أكواد الخطأ في الكارتة الإلكترونية.
             </div>
           </div>
           <div>
@@ -273,11 +384,11 @@
               <a href="#booking-section" class="hover:text-blue-600 transition-colors">صيانة ثلاجات اريستون - Ariston Refrigerators</a>
             </h3>
             <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-4">
-              نختص في قسم <a href="https://ariston.maintenance-eg.net/" class="text-blue-600 font-bold hover:underline">صيانة ثلاجات اريستون</a> بمعالجة جميع مشاكل التبريد والتجميد لثلاجات وديب فريزر Ariston بنظام النوفروست المتطور. نقوم بشحن غاز الفريون، فحص وتغيير السناسر والترموستات، علاج انسداد مساري الهواء، واختبار كفاءة الكباس (الموتور) لضمان حفظ الأطعمة طازجة وآمنة بكفاءة مطلقة ودون أي نقل للثلاجة.
+              نختص في قسم <a href="https://ariston.maintenance-eg.net/" class="text-blue-600 font-bold hover:underline">صيانة ثلاجات اريستون</a> بمعالجة مشاكل التبريد والتجميد لثلاجات وديب فريزر Ariston النوفروست. نقوم بفحص دوائر التبريد، السناسر والترموستات، مساري الهواء، وكفاءة الكباس (الموتور) مع توضيح الإجراء المناسب بعد الفحص.
             </p>
             <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 text-xs text-slate-700 mb-5">
-              <strong class="text-slate-900 block mb-1.5 font-bold"><i class="fa-solid fa-triangle-exclamation text-amber-500 ml-1"></i> أبرز الأعطال المعالجة بدقة:</strong>
-              ضعف التبريد بالكابينة السفلية، تراكم الثلج الكثيف بالفريزر، تسريب غاز الفريون، تلف كاوتش باب الثلاجة، وتوقف الموتور المفاجئ عن العمل.
+              <strong class="text-slate-900 block mb-1.5 font-bold"><i class="fa-solid fa-triangle-exclamation text-amber-500 ml-1"></i> أبرز الأعطال المعالجة:</strong>
+              ضعف التبريد بالكابينة، تراكم الثلج بالفريزر، تسريب غاز التبريد، تلف كاوتش الباب، وتوقف الموتور عن العمل.
             </div>
           </div>
           <div>
@@ -297,11 +408,11 @@
               <a href="#booking-section" class="hover:text-amber-700 transition-colors">صيانة سخانات اريستون - Ariston Water Heaters</a>
             </h3>
             <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-4">
-              نقدم عبر خدمات <a href="https://ariston.maintenance-eg.net/" class="text-amber-700 font-bold hover:underline">صيانة سخانات اريستون</a> حلولاً جذرية وفورية لأعطال السخانات الفورية وذات الخزان من Ariston. يعمل مهندسونا على فحص الهيتر الكهربائي، صمامات الأمان، منظم الحرارة والترموستات، ومعالجة أي تسريب مائي من جسم الخزان أو التوصيلات لضمان حصولك على مياه ساخنة بانتظام وأمان تام دون أي عناء أو نقل للسخان.
+              نقدم عبر خدمات <a href="https://ariston.maintenance-eg.net/" class="text-amber-700 font-bold hover:underline">صيانة سخانات اريستون</a> فحص وإصلاح السخانات الفورية وذات الخزان من Ariston. يشمل الفحص الهيتر الكهربائي، صمامات الأمان، منظم الحرارة، ومعالجة التسريب المائي من الوصلات أو الخزان حسب حالة الجهاز.
             </p>
             <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 text-xs text-slate-700 mb-5">
-              <strong class="text-slate-900 block mb-1.5 font-bold"><i class="fa-solid fa-triangle-exclamation text-amber-500 ml-1"></i> أبرز الأعطال المعالجة بدقة:</strong>
-              انطفاء الشعلة بالسخان الغاز، ضعف تسخين المياه، تلف الهيتر الكهربائي، وتراكم الأملاح داخل خزان السخان.
+              <strong class="text-slate-900 block mb-1.5 font-bold"><i class="fa-solid fa-triangle-exclamation text-amber-500 ml-1"></i> أبرز الأعطال المعالجة:</strong>
+              انطفاء الشعلة بالسخان الغاز، ضعف تسخين المياه، تلف الهيتر الكهربائي، وتراكم الأملاح داخل الخزان.
             </div>
           </div>
           <div>
@@ -321,11 +432,11 @@
               <a href="#booking-section" class="hover:text-orange-700 transition-colors">صيانة بوتاجازات وأفران اريستون - Ariston Cookers</a>
             </h3>
             <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-4">
-              نحافظ على سلامتك وسلامة أسرتك من خلال خدمات <a href="https://ariston.maintenance-eg.net/" class="text-orange-700 font-bold hover:underline">صيانة بوتاجازات وأفران اريستون بلت إن</a> (Ariston Cookers & Built-in Ovens). نقوم بتسليك الفواني، صيانة نظام الأمان الكامل، تصليح مفاتيح الإشعال الذاتي، وضبط ترموستات حرارة الفرن والشواية لضمان تسوية مثالية للأطعمة وأعلى درجات الأمان.
+              نقدم خدمات <a href="https://ariston.maintenance-eg.net/" class="text-orange-700 font-bold hover:underline">صيانة بوتاجازات وأفران اريستون بلت إن</a> (Ariston Cookers & Built-in Ovens). تشمل الأعمال فحص الفواني، نظام الأمان، مفاتيح الإشعال الذاتي، وضبط حرارة الفرن والشواية حسب الموديل.
             </p>
             <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 text-xs text-slate-700 mb-5">
-              <strong class="text-slate-900 block mb-1.5 font-bold"><i class="fa-solid fa-triangle-exclamation text-amber-500 ml-1"></i> أبرز الأعطال المعالجة بدقة:</strong>
-              انسداد مواسير الغاز والفواني، تلف الإشعال الذاتي، عدم انتظام لهب الفرن، وكسر الزجاج الحراري للباب.
+              <strong class="text-slate-900 block mb-1.5 font-bold"><i class="fa-solid fa-triangle-exclamation text-amber-500 ml-1"></i> أبرز الأعطال المعالجة:</strong>
+              انسداد الفواني، تلف الإشعال الذاتي، عدم انتظام لهب الفرن، وكسر الزجاج الحراري للباب.
             </div>
           </div>
           <div>
@@ -345,10 +456,10 @@
               <a href="#booking-section" class="hover:text-teal-700 transition-colors">صيانة تكييفات اريستون - Ariston AC Service</a>
             </h3>
             <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-4">
-              نضمن لك هواءً نقياً وتبريداً مثالياً طوال العام مع خدمات <a href="https://ariston.maintenance-eg.net/" class="text-teal-700 font-bold hover:underline">صيانة تكييفات اريستون</a> (Ariston Air Conditioners). تشمل أعمالنا التنظيف الكيميائي للفلاتر، فحص ضغط شحنة الفريون، صيانة لوحات الكنترول الإلكترونية، ومعالجة تساقط المياه بالوحدة الداخلية لرفع كفاءة التبريد وتوفير استهلاك الكهرباء.
+              نقدم خدمات <a href="https://ariston.maintenance-eg.net/" class="text-teal-700 font-bold hover:underline">صيانة تكييفات اريستون</a> (Ariston Air Conditioners). تشمل الأعمال تنظيف الفلاتر، فحص ضغط دائرة التبريد، صيانة لوحات الكنترول، ومعالجة تساقط المياه بالوحدة الداخلية.
             </p>
             <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 text-xs text-slate-700 mb-5">
-              <strong class="text-slate-900 block mb-1.5 font-bold"><i class="fa-solid fa-triangle-exclamation text-amber-500 ml-1"></i> أبرز الأعطال المعالجة بدقة:</strong>
+              <strong class="text-slate-900 block mb-1.5 font-bold"><i class="fa-solid fa-triangle-exclamation text-amber-500 ml-1"></i> أبرز الأعطال المعالجة:</strong>
               ضعف التبريد، تساقط المياه داخل الغرفة، توقف الكباس، وأعطال بوردة التشغيل والريموت.
             </div>
           </div>
@@ -369,10 +480,10 @@
               <a href="#booking-section" class="hover:text-purple-700 transition-colors">صيانة غسالات أطباق وميكروويف اريستون</a>
             </h3>
             <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-4">
-              نقدم الدعم الفني المتخصص لأجهزة المطبخ الذكية من اريستون وتشمل غسالات الأطباق وأفران الميكروويف (Ariston Dishwashers & Microwaves). نتعامل بدقة مع أعطال التسخين، انسداد رشاشات المياه، طلمبات الطرد، ومشاكل الماجنترون ولوحات اللمس في الميكروويف لتعود الأجهزة للعمل بكفاءة كالجديدة تماماً.
+              نقدم الدعم الفني لغسالات الأطباق وأفران الميكروويف من اريستون (Ariston Dishwashers & Microwaves)، ويشمل فحص التسخين، رشاشات المياه، طلمبات الطرد، ومكونات التسخين ولوحات اللمس.
             </p>
             <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 text-xs text-slate-700 mb-5">
-              <strong class="text-slate-900 block mb-1.5 font-bold"><i class="fa-solid fa-triangle-exclamation text-amber-500 ml-1"></i> أبرز الأعطال المعالجة بدقة:</strong>
+              <strong class="text-slate-900 block mb-1.5 font-bold"><i class="fa-solid fa-triangle-exclamation text-amber-500 ml-1"></i> أبرز الأعطال المعالجة:</strong>
               عدم تسخين المياه بغسالة الأطباق، توقف صينية الميكروويف، حدوث شرارة بالداخل، وعطل لوحة اللمس.
             </div>
           </div>
@@ -396,13 +507,13 @@
           <div class="flex flex-wrap items-center justify-between gap-3 mb-8 pb-4 border-b border-slate-700">
             <div>
               <span class="inline-block bg-aristonRed/20 text-rose-300 border border-aristonRed/30 text-xs font-bold px-3 py-1 rounded-full mb-2">
-                حجز زيارة فورية
+                حجز زيارة
               </span>
               <h2 class="text-xl sm:text-2xl font-black text-white">طلب فحص وصيانة لأجهزة اريستون</h2>
             </div>
             <div class="text-left">
               <span class="text-aristonRed text-xs font-semibold block">توجيه الفني المتخصص</span>
-              <span class="text-slate-300 text-[11px]">تأكيد الحجز فوراً</span>
+              <span class="text-slate-300 text-[11px]">يؤكد الموعد عند التواصل</span>
             </div>
           </div>
 
@@ -450,54 +561,50 @@
               <button type="submit" id="submitBtn" class="w-full sm:flex-1 bg-gradient-to-r from-aristonRed to-rose-600 text-white font-black py-3.5 px-6 rounded-xl shadow-lg text-base">
                 <span id="btnText">إرسال طلب الزيارة</span>
               </button>
-              <a href="https://wa.me/201156174546" target="_blank" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-3.5 px-5 rounded-xl text-sm">
+              <a href="https://wa.me/201156174546" target="_blank" rel="noopener" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-3.5 px-5 rounded-xl text-sm">
                 <i class="fa-brands fa-whatsapp text-lg"></i>
-                <span>تواصل فوري واتساب</span>
+                <span>تواصل واتساب</span>
               </a>
             </div>
 
             <div id="formSuccessMessage" class="hidden p-4 rounded-xl bg-emerald-950/80 border border-emerald-500 text-emerald-200 text-xs sm:text-sm text-center">
               <i class="fa-solid fa-circle-check text-emerald-400 text-lg ml-1"></i>
-              تم إرسال طلبكم بنجاح! سيتم التواصل معكم خلال دقائق لتأكيد موعد وصول الفني.
+              تم إرسال طلبكم بنجاح، وسيتم التواصل معكم لتنسيق الموعد حسب التوافر.
             </div>
           </form>
         </div>
       </div>
 
-      <!-- Diagram فريمات بأسهم رسمية لخطوات طلب الخدمة -->
+      <!-- خطوات طلب الخدمة -->
       <div class="mt-12">
         <h3 class="text-xl font-black text-white text-center mb-8">كيف تتم طلب خدمة صيانة أجهزة اريستون؟</h3>
         <div class="grid grid-cols-1 md:grid-cols-4 gap-4 relative">
-          <!-- الخطوة 1 -->
           <div class="bg-slate-800/90 border border-slate-700 rounded-2xl p-5 text-center relative flex flex-col items-center shadow-lg">
             <div class="w-12 h-12 rounded-full bg-aristonRed text-white flex items-center justify-center font-black text-lg mb-3 shadow-md">1</div>
             <h4 class="text-white font-bold text-sm mb-1.5">الاتصال والتواصل</h4>
-            <p class="text-slate-400 text-xs leading-relaxed">تواصل معنا عبر زر الواتساب المباشر لتسجيل نوع العطل.</p>
+            <p class="text-slate-400 text-xs leading-relaxed">تواصل معنا عبر الواتساب أو النموذج لتسجيل نوع العطل.</p>
           </div>
-          <!-- الخطوة 2 -->
           <div class="bg-slate-800/90 border border-slate-700 rounded-2xl p-5 text-center relative flex flex-col items-center shadow-lg">
             <div class="w-12 h-12 rounded-full bg-aristonRed text-white flex items-center justify-center font-black text-lg mb-3 shadow-md">2</div>
             <h4 class="text-white font-bold text-sm mb-1.5">تشخيص الحالة</h4>
-            <p class="text-slate-400 text-xs leading-relaxed">يقوم الدعم الفني بتحديد تفاصيل المشكلة وتوجيه المهندس المختص.</p>
+            <p class="text-slate-400 text-xs leading-relaxed">يراجع الدعم الفني تفاصيل المشكلة ويوجه الفني المختص.</p>
           </div>
-          <!-- الخطوة 3 -->
           <div class="bg-slate-800/90 border border-slate-700 rounded-2xl p-5 text-center relative flex flex-col items-center shadow-lg">
             <div class="w-12 h-12 rounded-full bg-aristonRed text-white flex items-center justify-center font-black text-lg mb-3 shadow-md">3</div>
             <h4 class="text-white font-bold text-sm mb-1.5">تحديد الموعد</h4>
-            <p class="text-slate-400 text-xs leading-relaxed">تنسيق الموعد الأنسب لوصول الفني إلى موقعك في القاهرة أو الجيزة أو الإسكندرية.</p>
+            <p class="text-slate-400 text-xs leading-relaxed">تنسيق الموعد الأنسب لوصول الفني حسب العنوان والتوافر.</p>
           </div>
-          <!-- الخطوة 4 -->
           <div class="bg-slate-800/90 border border-slate-700 rounded-2xl p-5 text-center relative flex flex-col items-center shadow-lg">
             <div class="w-12 h-12 rounded-full bg-aristonRed text-white flex items-center justify-center font-black text-lg mb-3 shadow-md">4</div>
             <h4 class="text-white font-bold text-sm mb-1.5">الفحص والإصلاح</h4>
-            <p class="text-slate-400 text-xs leading-relaxed">فحص الجهاز بأحدث المعدات وإتمام الإصلاح وتسليم إيصال خدمة معتمد.</p>
+            <p class="text-slate-400 text-xs leading-relaxed">فحص الجهاز وإتمام الإصلاح وتسليم إيصال خدمة.</p>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Service Coverage Map Section with NAP Card (No Social Links & Using Exact CID 0x42ea8c4791adf3a7) -->
+  <!-- Service Coverage Map Section with NAP Card -->
   <section class="py-16 px-4 bg-white border-y border-slate-200">
     <div class="max-w-6xl mx-auto">
       <div class="text-center mb-12">
@@ -508,42 +615,41 @@
       </div>
 
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start mb-12">
-        <!-- NAP Card Clean without Socials -->
+        <!-- NAP Card -->
         <div class="lg:col-span-5 bg-slate-50 border border-slate-200 rounded-3xl p-6 sm:p-8 shadow-sm">
           <div class="space-y-5 text-sm">
             <span class="inline-block bg-rose-50 text-aristonRed border border-rose-200 px-3 py-1 rounded-full text-xs font-bold mb-2">📍 نطاق التغطية - القاهرة، الجيزة والإسكندرية</span>
             <h3 class="text-lg font-black text-slate-900 mb-2">مركز صيانة اريستون - Ariston Center</h3>
             <ul class="space-y-2.5 text-slate-700 text-xs sm:text-sm">
-              <li><strong>نطاق الخدمة:</strong> تغطية شاملة لكافة أحياء ومناطق القاهرة، الجيزة والإسكندرية</li>
-              <li><strong>طريقة التواصل:</strong> عبر زر الواتساب المباشر أو نموذج حجز الزيارة</li>
+              <li><strong>نطاق الخدمة:</strong> تغطية لأحياء ومناطق القاهرة، الجيزة والإسكندرية</li>
+              <li><strong>طريقة التواصل:</strong> عبر الواتساب أو نموذج حجز الزيارة</li>
               <li><strong>ساعات العمل والاستقبال:</strong> 7 أيام في الأسبوع من 08:00 صباحاً حتى 01:00 صباحاً</li>
-              <li><strong>فريق العمل:</strong> فنيين خبرة مجهزون بأحدث أجهزة الفحص السريع</li>
+              <li><strong>فريق العمل:</strong> فنيين مجهزين بأجهزة الفحص المنزلي</li>
             </ul>
           </div>
         </div>
 
-        <!-- Embedded Map with Exact CID -->
+        <!-- Embedded Map -->
         <div class="lg:col-span-7 bg-white rounded-3xl overflow-hidden border border-slate-200 shadow-md">
           <div class="relative w-full h-[450px]">
             <iframe 
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3453.6!2d31.446842!3d30.060693!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x42ea8c4791adf3a7!2z2YXYrNmF2Lkg2LTYsdmD2Kkg2KfZhNmG2YjYp9mH2Kog2YXYsdmK2KfYqg!5e0!3m2!1sen!2seg!4v1793317048323!5m2!1sen!2seg" 
-              width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy">
+              width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" title="خريطة صيانة اريستون">
             </iframe>
           </div>
         </div>
       </div>
 
-      <!-- Service Areas & Districts (70 Districts placed BELOW the Map) -->
+      <!-- Service Areas & Districts (70 Districts) -->
       <div class="bg-slate-50 border border-slate-200 rounded-3xl p-6 sm:p-8">
         <h3 class="text-lg font-black text-slate-900 mb-4 text-center">
           <i class="fa-solid fa-map-location-dot text-aristonRed ml-2"></i>
           مناطق وأحياء الخدمة الشاملة لمركز صيانة اريستون
         </h3>
         <p class="text-xs sm:text-sm text-slate-700 leading-relaxed text-center max-w-4xl mx-auto mb-6">
-          نغطي القاهرة، الجيزة، والإسكندرية عبر فرق صيانة لتلبية طلبات إصلاح غسالات وثلاجات وسخانات أريستون في أسرع وقت.
+          نغطي القاهرة، الجيزة، والإسكندرية عبر فرق صيانة لتلبية طلبات إصلاح غسالات وثلاجات وسخانات اريستون حسب المواعيد المتاحة.
         </p>
         <div class="flex flex-wrap items-center justify-center gap-2 sm:gap-2.5 max-w-5xl mx-auto">
-          <!-- القاهرة -->
           <span class="bg-red-50 border border-red-200 px-3 py-1.5 rounded-xl text-xs font-bold text-aristonDarkRed">مدينة نصر</span>
           <span class="bg-red-50 border border-red-200 px-3 py-1.5 rounded-xl text-xs font-bold text-aristonDarkRed">مصر الجديدة</span>
           <span class="bg-red-50 border border-red-200 px-3 py-1.5 rounded-xl text-xs font-bold text-aristonDarkRed">المعادي</span>
@@ -577,8 +683,7 @@
           <span class="bg-red-50 border border-red-200 px-3 py-1.5 rounded-xl text-xs font-bold text-aristonDarkRed">العباسية</span>
           <span class="bg-red-50 border border-red-200 px-3 py-1.5 rounded-xl text-xs font-bold text-aristonDarkRed">السيدة زينب</span>
           <span class="bg-red-50 border border-red-200 px-3 py-1.5 rounded-xl text-xs font-bold text-aristonDarkRed">الأميرية</span>
-          
-          <!-- الجيزة -->
+
           <span class="bg-white border border-slate-300 px-3 py-1.5 rounded-xl text-xs font-bold text-slate-800">المهندسين</span>
           <span class="bg-white border border-slate-300 px-3 py-1.5 rounded-xl text-xs font-bold text-slate-800">الدقي</span>
           <span class="bg-white border border-slate-300 px-3 py-1.5 rounded-xl text-xs font-bold text-slate-800">العجوزة</span>
@@ -598,8 +703,7 @@
           <span class="bg-white border border-slate-300 px-3 py-1.5 rounded-xl text-xs font-bold text-slate-800">بشتيل</span>
           <span class="bg-white border border-slate-300 px-3 py-1.5 rounded-xl text-xs font-bold text-slate-800">بولاق الدكرور</span>
           <span class="bg-white border border-slate-300 px-3 py-1.5 rounded-xl text-xs font-bold text-slate-800">الطالبية</span>
-          
-          <!-- الإسكندرية -->
+
           <span class="bg-blue-50 border border-blue-200 px-3 py-1.5 rounded-xl text-xs font-bold text-blue-800">سموحة</span>
           <span class="bg-blue-50 border border-blue-200 px-3 py-1.5 rounded-xl text-xs font-bold text-blue-800">سيدي جابر</span>
           <span class="bg-blue-50 border border-blue-200 px-3 py-1.5 rounded-xl text-xs font-bold text-blue-800">ميامي</span>
@@ -629,7 +733,6 @@
       </div>
 
       <div class="space-y-4">
-        <!-- FAQ 1 -->
         <div class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden">
           <button type="button" onclick="toggleFaq(1)" class="w-full p-5 text-right font-bold text-slate-900 flex items-center justify-between gap-4 hover:bg-slate-50 transition-colors">
             <span class="text-sm sm:text-base flex items-center gap-2">
@@ -643,7 +746,6 @@
           </div>
         </div>
 
-        <!-- FAQ 2 -->
         <div class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden">
           <button type="button" onclick="toggleFaq(2)" class="w-full p-5 text-right font-bold text-slate-900 flex items-center justify-between gap-4 hover:bg-slate-50 transition-colors">
             <span class="text-sm sm:text-base flex items-center gap-2">
@@ -653,11 +755,10 @@
             <i id="faq-icon-2" class="fa-solid fa-chevron-down text-slate-400 transition-transform duration-300"></i>
           </button>
           <div id="faq-answer-2" class="hidden px-5 pb-5 text-xs sm:text-sm text-slate-600 leading-relaxed border-t border-slate-100 pt-3">
-            نقدم خدمات الصيانة الفورية في القاهرة بالكامل، الجيزة، والإسكندرية بكافة أحيائها.
+            نقدم خدمات الصيانة في القاهرة بالكامل، الجيزة، والإسكندرية بكافة أحيائها.
           </div>
         </div>
 
-        <!-- FAQ 3 -->
         <div class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden">
           <button type="button" onclick="toggleFaq(3)" class="w-full p-5 text-right font-bold text-slate-900 flex items-center justify-between gap-4 hover:bg-slate-50 transition-colors">
             <span class="text-sm sm:text-base flex items-center gap-2">
@@ -671,7 +772,6 @@
           </div>
         </div>
 
-        <!-- FAQ 4 -->
         <div class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden">
           <button type="button" onclick="toggleFaq(4)" class="w-full p-5 text-right font-bold text-slate-900 flex items-center justify-between gap-4 hover:bg-slate-50 transition-colors">
             <span class="text-sm sm:text-base flex items-center gap-2">
@@ -681,11 +781,10 @@
             <i id="faq-icon-4" class="fa-solid fa-chevron-down text-slate-400 transition-transform duration-300"></i>
           </button>
           <div id="faq-answer-4" class="hidden px-5 pb-5 text-xs sm:text-sm text-slate-600 leading-relaxed border-t border-slate-100 pt-3">
-            يمكنك بكل سهولة التواصل معنا عبر زر واتساب المباشر بالموقع أو إرسال تفاصيل عطل جهاز Ariston وعنوانك لتنسيق الزيارة فوراً.
+            يمكنك بكل سهولة التواصل معنا عبر زر واتساب المباشر بالموقع أو إرسال تفاصيل عطل جهاز Ariston وعنوانك لتنسيق الزيارة.
           </div>
         </div>
 
-        <!-- FAQ 5 -->
         <div class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden">
           <button type="button" onclick="toggleFaq(5)" class="w-full p-5 text-right font-bold text-slate-900 flex items-center justify-between gap-4 hover:bg-slate-50 transition-colors">
             <span class="text-sm sm:text-base flex items-center gap-2">
@@ -699,7 +798,6 @@
           </div>
         </div>
 
-        <!-- FAQ 6 -->
         <div class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden">
           <button type="button" onclick="toggleFaq(6)" class="w-full p-5 text-right font-bold text-slate-900 flex items-center justify-between gap-4 hover:bg-slate-50 transition-colors">
             <span class="text-sm sm:text-base flex items-center gap-2">
@@ -713,7 +811,6 @@
           </div>
         </div>
 
-        <!-- FAQ 7 -->
         <div class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden">
           <button type="button" onclick="toggleFaq(7)" class="w-full p-5 text-right font-bold text-slate-900 flex items-center justify-between gap-4 hover:bg-slate-50 transition-colors">
             <span class="text-sm sm:text-base flex items-center gap-2">
@@ -727,7 +824,6 @@
           </div>
         </div>
 
-        <!-- FAQ 8 -->
         <div class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden">
           <button type="button" onclick="toggleFaq(8)" class="w-full p-5 text-right font-bold text-slate-900 flex items-center justify-between gap-4 hover:bg-slate-50 transition-colors">
             <span class="text-sm sm:text-base flex items-center gap-2">
@@ -741,7 +837,6 @@
           </div>
         </div>
 
-        <!-- FAQ 9 -->
         <div class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden">
           <button type="button" onclick="toggleFaq(9)" class="w-full p-5 text-right font-bold text-slate-900 flex items-center justify-between gap-4 hover:bg-slate-50 transition-colors">
             <span class="text-sm sm:text-base flex items-center gap-2">
@@ -755,7 +850,6 @@
           </div>
         </div>
 
-        <!-- FAQ 10 -->
         <div class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden">
           <button type="button" onclick="toggleFaq(10)" class="w-full p-5 text-right font-bold text-slate-900 flex items-center justify-between gap-4 hover:bg-slate-50 transition-colors">
             <span class="text-sm sm:text-base flex items-center gap-2">
@@ -765,7 +859,7 @@
             <i id="faq-icon-10" class="fa-solid fa-chevron-down text-slate-400 transition-transform duration-300"></i>
           </button>
           <div id="faq-answer-10" class="hidden px-5 pb-5 text-xs sm:text-sm text-slate-600 leading-relaxed border-t border-slate-100 pt-3">
-            لأننا نوفر سرعة الاستجابة، الفحص الفوري في القاهرة والجيزة والإسكندرية، والاعتماد على مهندسين ذوي خبرة عالية.
+            لأننا نوفر سرعة الاستجابة، الفحص في القاهرة والجيزة والإسكندرية، والاعتماد على مهندسين ذوي خبرة عالية.
           </div>
         </div>
       </div>
@@ -776,10 +870,10 @@
   <footer class="bg-brandDark text-slate-400 py-10 px-4 border-t border-slate-800 text-center text-xs">
     <div class="max-w-6xl mx-auto space-y-3">
       <div class="font-extrabold text-white text-base">
-        مركز صيانة اريستون - Ariston Maintenance Center | خدمة فورية
+        مركز صيانة اريستون - Ariston Maintenance Center
       </div>
       <p class="max-w-2xl mx-auto text-slate-500 leading-relaxed">
-        مركز إصلاح وصيانة للأجهزة اريستون (Ariston). خدماتنا تغطي القاهرة، الجيزة والإسكندرية. الأسماء والعلامات التجارية ملك لأصحابها ولتوضيح الملاءمة الفنية فقط.
+        مركز إصلاح وصيانة مستقل للأجهزة اريستون (Ariston). خدماتنا تغطي القاهرة، الجيزة والإسكندرية. العلامات التجارية ملك لأصحابها وتستخدم لتوضيح الملاءمة الفنية فقط.
       </p>
       <div class="text-slate-600 pt-2">
         &copy; جميع الحقوق محفوظة لـ مركز صيانة أجهزة اريستون.
@@ -789,7 +883,7 @@
 
   <!-- Floating Sticky Action Bar -->
   <aside class="fixed bottom-3 left-3 right-3 sm:left-auto sm:right-6 sm:bottom-6 z-50 flex items-center gap-2">
-    <a href="https://wa.me/201156174546" target="_blank" class="flex-1 sm:flex-initial flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white font-black py-3.5 px-6 rounded-2xl shadow-xl transition-all pulsing-wa">
+    <a href="https://wa.me/201156174546" target="_blank" rel="noopener" class="flex-1 sm:flex-initial flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white font-black py-3.5 px-6 rounded-2xl shadow-xl transition-all pulsing-wa">
       <i class="fa-brands fa-whatsapp text-2xl"></i>
       <span class="text-sm font-bold">تواصل واتساب فني</span>
     </a>
