@@ -56,206 +56,386 @@
 
   <!-- Unified JSON-LD Schema Graph -->
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "LocalBusiness",
-        "@id": "https://ariston.maintenance-eg.net/#business",
-        "name": "مركز صيانة أجهزة اريستون",
-        "alternateName": [
-          "مركز صيانة أجهزة اريستون - Ariston Appliances Maintenance",
-          "صيانة غسالات اريستون",
-          "صيانة ثلاجات اريستون",
-          "مركز صيانة اريستون"
-        ],
-        "url": "https://ariston.maintenance-eg.net/",
-        "sameAs": [
-          "https://www.crunchbase.com/organization/مركز-صيانة-اجهزة-اريستون",
-          "https://x.com/aristonfix",
-          "https://github.com/ariston-fix-center",
-          "https://www.linkedin.com/company/aristonfix",
-          "https://www.openstreetmap.org/node/6572400070",
-          "https://wikimapia.org/#lang=en&lat=30.057963&lon=31.330430&z=19&m=w&show=/43723277/ar&search=Omar%20Lotfy",
-          "https://mapcreator.here.com/place:gO7aH2ToswmdBCgJ/?l=30.0582,31.3309,20,normal",
-          "https://linktr.ee/aristonfix",
-          "https://gitlab.com/aristonfix"
-        ],
-        "hasMap": "https://www.google.com/maps?cid=4821820590068200359",
-        "priceRange": "$$",
-        "image": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=1200&q=80",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "شارع عمر لطفي، مدينة نصر",
-          "addressLocality": "Cairo",
-          "addressRegion": "Cairo Governorate",
-          "postalCode": "11765",
-          "addressCountry": "EG"
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "LocalBusiness",
+      "@id": "https://ariston.maintenance-eg.net/#business",
+      "name": "مركز صيانة أجهزة اريستون",
+      "alternateName": [
+        "مركز صيانة اريستون",
+        "مركز صيانة أجهزة اريستون - Ariston Appliances Maintenance"
+      ],
+      "url": "https://ariston.maintenance-eg.net/",
+      "sameAs": [
+        "https://www.crunchbase.com/organization/مركز-صيانة-اجهزة-اريستون",
+        "https://x.com/aristonfix",
+        "https://github.com/ariston-fix-center",
+        "https://www.linkedin.com/company/aristonfix",
+        "https://www.openstreetmap.org/node/6572400070",
+        "https://wikimapia.org/#lang=en&lat=30.057963&lon=31.330430&z=19&m=w&show=/43723277/ar&search=Omar%20Lotfy",
+        "https://mapcreator.here.com/place:gO7aH2ToswmdBCgJ/?l=30.0582,31.3309,20,normal",
+        "https://linktr.ee/aristonfix",
+        "https://gitlab.com/aristonfix"
+      ],
+      "hasMap": "https://www.google.com/maps?cid=4821820590068200359",
+      "priceRange": "$$",
+      "image": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=1200&q=80",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "شارع عمر لطفي، مدينة نصر",
+        "addressLocality": "Cairo",
+        "addressRegion": "Cairo Governorate",
+        "postalCode": "11765",
+        "addressCountry": "EG"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 30.057963,
+        "longitude": 31.33043
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday",
+            "Sunday"
+          ],
+          "opens": "08:00",
+          "closes": "01:00"
+        }
+      ],
+      "areaServed": [
+        "مدينة نصر",
+        "مصر الجديدة",
+        "المعادي",
+        "التجمع الخامس",
+        "التجمع الأول",
+        "الرحاب",
+        "مدينتي",
+        "المقطم",
+        "مدينة العبور",
+        "مدينة الشروق",
+        "مدينة بدر",
+        "هيلوبوليس الجديدة",
+        "النزهة الجديدة",
+        "عين شمس",
+        "المطرية",
+        "المرج",
+        "الزاوية الحمراء",
+        "الساحل",
+        "شبرا الخيمة",
+        "المنيل",
+        "الزمالك",
+        "جاردن سيتي",
+        "وسط البلد",
+        "المعصرة",
+        "حلوان",
+        "15 مايو",
+        "التبين",
+        "دار السلام",
+        "البساتين",
+        "الوايلي",
+        "العباسية",
+        "السيدة زينب",
+        "الإمام الشافعي",
+        "الأزهر",
+        "الحلمية",
+        "ألف مسكن",
+        "الأميرية",
+        "المظلات",
+        "مسطرد",
+        "أبو زعبل",
+        "المهندسين",
+        "الدقي",
+        "العجوزة",
+        "الهرم",
+        "فيصل",
+        "الشيخ زايد",
+        "مدينة 6 أكتوبر",
+        "حدائق الأهرام",
+        "إمبابة",
+        "وراق الحضر",
+        "أوسيم",
+        "كرداسة",
+        "البدرشين",
+        "العياط",
+        "أبو النمرس",
+        "الحوامدية",
+        "بشتيل",
+        "بولاق الدكرور",
+        "كفر طهرمس",
+        "الطالبية",
+        "سموحة",
+        "سيدي جابر",
+        "ميامي",
+        "سيدي بشر",
+        "العصافرة",
+        "المندرة",
+        "لوران",
+        "جليم",
+        "ابراج العبد",
+        "العجمي"
+      ],
+      "description": "مركز صيانة أجهزة اريستون يقدم خدمات فحص وإصلاح وصيانة الأجهزة المنزلية في القاهرة والجيزة والإسكندرية، تشمل غسالات الملابس والثلاجات والسخانات والأفران وغسالات الأطباق والميكروويف، مع تنسيق الزيارات عبر واتساب أو نموذج طلب الصيانة.",
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "contactType": "customer service",
+          "url": "https://wa.me/201156174546",
+          "availableLanguage": [
+            "ar"
+          ]
+        }
+      ],
+      "knowsLanguage": [
+        "ar"
+      ]
+    },
+    {
+      "@type": "Service",
+      "@id": "https://ariston.maintenance-eg.net/#service-washers",
+      "name": "صيانة غسالات اريستون",
+      "serviceType": "إصلاح وصيانة غسالات الملابس والمجففات",
+      "provider": {
+        "@id": "https://ariston.maintenance-eg.net/#business"
+      },
+      "areaServed": [
+        {
+          "@type": "AdministrativeArea",
+          "name": "القاهرة"
         },
-        "geo": {
-          "@type": "GeoCoordinates",
-          "latitude": 30.057963,
-          "longitude": 31.330430
+        {
+          "@type": "AdministrativeArea",
+          "name": "الجيزة"
         },
-        "openingHoursSpecification": [
-          {
-            "@type": "OpeningHoursSpecification",
-            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
-            "opens": "08:00",
-            "closes": "01:00"
+        {
+          "@type": "AdministrativeArea",
+          "name": "الإسكندرية"
+        }
+      ],
+      "description": "خدمة فحص وإصلاح منزلية لأجهزة اريستون داخل مناطق التغطية حسب توافر الفنيين."
+    },
+    {
+      "@type": "Service",
+      "@id": "https://ariston.maintenance-eg.net/#service-fridges",
+      "name": "صيانة ثلاجات اريستون",
+      "serviceType": "إصلاح وصيانة الثلاجات والديب فريزر",
+      "provider": {
+        "@id": "https://ariston.maintenance-eg.net/#business"
+      },
+      "areaServed": [
+        {
+          "@type": "AdministrativeArea",
+          "name": "القاهرة"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "الجيزة"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "الإسكندرية"
+        }
+      ],
+      "description": "خدمة فحص وإصلاح منزلية لأجهزة اريستون داخل مناطق التغطية حسب توافر الفنيين."
+    },
+    {
+      "@type": "Service",
+      "@id": "https://ariston.maintenance-eg.net/#service-heaters",
+      "name": "صيانة سخانات اريستون",
+      "serviceType": "إصلاح وصيانة السخانات",
+      "provider": {
+        "@id": "https://ariston.maintenance-eg.net/#business"
+      },
+      "areaServed": [
+        {
+          "@type": "AdministrativeArea",
+          "name": "القاهرة"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "الجيزة"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "الإسكندرية"
+        }
+      ],
+      "description": "خدمة فحص وإصلاح منزلية لأجهزة اريستون داخل مناطق التغطية حسب توافر الفنيين."
+    },
+    {
+      "@type": "Service",
+      "@id": "https://ariston.maintenance-eg.net/#service-cookers",
+      "name": "صيانة بوتاجازات وأفران اريستون",
+      "serviceType": "إصلاح وصيانة البوتاجازات والأفران",
+      "provider": {
+        "@id": "https://ariston.maintenance-eg.net/#business"
+      },
+      "areaServed": [
+        {
+          "@type": "AdministrativeArea",
+          "name": "القاهرة"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "الجيزة"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "الإسكندرية"
+        }
+      ],
+      "description": "خدمة فحص وإصلاح منزلية لأجهزة اريستون داخل مناطق التغطية حسب توافر الفنيين."
+    },
+    {
+      "@type": "Service",
+      "@id": "https://ariston.maintenance-eg.net/#service-dishwashers-microwaves",
+      "name": "صيانة غسالات أطباق وميكروويف اريستون",
+      "serviceType": "إصلاح وصيانة غسالات الأطباق والميكروويف",
+      "provider": {
+        "@id": "https://ariston.maintenance-eg.net/#business"
+      },
+      "areaServed": [
+        {
+          "@type": "AdministrativeArea",
+          "name": "القاهرة"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "الجيزة"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "الإسكندرية"
+        }
+      ],
+      "description": "خدمة فحص وإصلاح منزلية لأجهزة اريستون داخل مناطق التغطية حسب توافر الفنيين."
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://ariston.maintenance-eg.net/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "هل مركز صيانة أجهزة اريستون يعتبر توكيلاً رسمياً لشركة Ariston؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "لا، نحن مركز صيانة فني ومحلي للأجهزة اريستون (Ariston)."
           }
-        ],
-        "areaServed": [
-          "مدينة نصر", "مصر الجديدة", "المعادي", "التجمع الخامس", "التجمع الأول", "الرحاب", "مدينتي", "المقطم", "مدينة العبور", "مدينة الشروق",
-          "مدينة بدر", "هيلوبوليس الجديدة", "النزهة الجديدة", "عين شمس", "المطرية", "المرج", "الزاوية الحمراء", "الساحل", "شبرا الخيمة", "المنيل",
-          "الزمالك", "جاردن سيتي", "وسط البلد", "المعصرة", "حلوان", "15 مايو", "التبين", "دار السلام", "البساتين", "الوايلي",
-          "العباسية", "السيدة زينب", "الإمام الشافعي", "الأزهر", "الحلمية", "ألف مسكن", "الأميرية", "المظلات", "مسطرد", "أبو زعبل",
-          "المهندسين", "الدقي", "العجوزة", "الهرم", "فيصل", "الشيخ زايد", "مدينة 6 أكتوبر", "حدائق الأهرام", "إمبابة", "وراق الحضر",
-          "أوسيم", "كرداسة", "البدرشين", "العياط", "أبو النمرس", "الحوامدية", "بشتيل", "بولاق الدكرور", "كفر طهرمس", "الطالبية",
-          "سموحة", "سيدي جابر", "ميامي", "سيدي بشر", "العصافرة", "المندرة", "لوران", "جليم", "ابراج العبد", "العجمي"
-        ]
-      },
-      {
-        "@type": "Service",
-        "@id": "https://ariston.maintenance-eg.net/#service-washers",
-        "name": "صيانة غسالات اريستون",
-        "serviceType": "إصلاح وصيانة غسالات الملابس والمجففات",
-        "provider": {"@id": "https://ariston.maintenance-eg.net/#business"}
-      },
-      {
-        "@type": "Service",
-        "@id": "https://ariston.maintenance-eg.net/#service-fridges",
-        "name": "صيانة ثلاجات اريستون",
-        "serviceType": "إصلاح وصيانة الثلاجات والديب فريزر",
-        "provider": {"@id": "https://ariston.maintenance-eg.net/#business"}
-      },
-      {
-        "@type": "Service",
-        "@id": "https://ariston.maintenance-eg.net/#service-heaters",
-        "name": "صيانة سخانات اريستون",
-        "serviceType": "إصلاح وصيانة السخانات",
-        "provider": {"@id": "https://ariston.maintenance-eg.net/#business"}
-      },
-      {
-        "@type": "Service",
-        "@id": "https://ariston.maintenance-eg.net/#service-cookers",
-        "name": "صيانة بوتاجازات وأفران اريستون",
-        "serviceType": "إصلاح وصيانة البوتاجازات والأفران",
-        "provider": {"@id": "https://ariston.maintenance-eg.net/#business"}
-      },
-      {
-        "@type": "Service",
-        "@id": "https://ariston.maintenance-eg.net/#service-dishwashers-microwaves",
-        "name": "صيانة غسالات أطباق وميكروويف اريستون",
-        "serviceType": "إصلاح وصيانة غسالات الأطباق والميكروويف",
-        "provider": {"@id": "https://ariston.maintenance-eg.net/#business"}
-      },
-      {
-        "@type": "FAQPage",
-        "@id": "https://ariston.maintenance-eg.net/#faq",
-        "mainEntity": [
-          {
-            "@type": "Question",
-            "name": "هل مركز صيانة أجهزة اريستون يعتبر توكيلاً رسمياً لشركة Ariston؟",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "لا، نحن مركز صيانة فني ومحلي للأجهزة اريستون (Ariston)."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "ما هي المناطق التي تغطيها خدمة صيانة أجهزة اريستون؟",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "نقدم خدمات الصيانة في القاهرة بالكامل، الجيزة، والإسكندرية بكافة أحيائها."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "هل يجب نقل الجهاز إلى مقر المركز لإصلاحه؟",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "إطلاقاً، يتم فحص وإصلاح أجهزة اريستون Ariston أمام عينيك دون أي نقل."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "كيف يمكنني طلب خدمة صيانة أجهزة اريستون عبر واتساب؟",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "يمكنك بكل سهولة التواصل معنا عبر زر واتساب المباشر بالموقع أو إرسال تفاصيل عطل جهاز Ariston وعنوانك لتنسيق الزيارة."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "ما هي أنواع أجهزة Ariston التي يشملها الدعم الفني؟",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "نغطي كافة أجهزة اريستون وتشمل: غسالات الملابس، الثلاجات، السخانات، البوتاجازات وأفران بلت إن، وغسالات الأطباق."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "كم يستغرق وصول الفني المتخصص بعد تسجيل الطلب؟",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "بفضل الانتشار الجغرافي لفرقنا، يصلكم الفني غالباً في نفس اليوم أو خلال ساعات معدودة من تأكيد الطلب."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "هل قطع الغيار المستخدمة في صيانة اريستون مطابقة للمواصفات؟",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "نعم، نحرص على تزويد فنيينا بقطع غيار بديلة عالية الجودة ومطابقة لمواصفات التشغيل الخاصة بأجهزة Ariston."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "ما هي مواعيد العمل الرسمية واستقبال طلبات الدعم؟",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "نستقبل رسائلكم واستفساراتكم وطلبات الصيانة يومياً من الساعة 08:00 صباحاً وحتى الساعة 01:00 بعد منتصف الليل."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "هل يتم تقديم إيصال خدمة ومتابعة دورية بعد إتمام الإصلاح؟",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "نعم، يتسلم العميل إيصال خدمة ومتابعة دورية بعد الانتهاء من أعمال الإصلاح وتركيب قطع الغيار."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "لماذا تختار مركز صيانة أجهزة اريستون للأجهزة المنزلية؟",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "لأننا نوفر سرعة الاستجابة، الفحص في القاهرة والجيزة والإسكندرية، والاعتماد على مهندسين ذوي خبرة عالية."
-            }
+        },
+        {
+          "@type": "Question",
+          "name": "ما هي المناطق التي تغطيها خدمة صيانة أجهزة اريستون؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "نقدم خدمات الصيانة في القاهرة بالكامل، الجيزة، والإسكندرية بكافة أحيائها."
           }
-        ]
-      },
-      {
-        "@type": "WebSite",
-        "@id": "https://ariston.maintenance-eg.net/#website",
-        "url": "https://ariston.maintenance-eg.net/",
-        "name": "مركز صيانة أجهزة اريستون",
-        "inLanguage": "ar-EG",
-        "publisher": {"@id": "https://ariston.maintenance-eg.net/#business"}
-      },
-      {
-        "@type": "WebPage",
-        "@id": "https://ariston.maintenance-eg.net/#webpage",
-        "url": "https://ariston.maintenance-eg.net/",
-        "name": "مركز صيانة أجهزة اريستون",
-        "inLanguage": "ar-EG",
-        "isPartOf": {"@id": "https://ariston.maintenance-eg.net/#website"},
-        "about": {"@id": "https://ariston.maintenance-eg.net/#business"},
-        "mainEntity": {"@id": "https://ariston.maintenance-eg.net/#business"}
+        },
+        {
+          "@type": "Question",
+          "name": "هل يجب نقل الجهاز إلى مقر المركز لإصلاحه؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "إطلاقاً، يتم فحص وإصلاح أجهزة اريستون Ariston أمام عينيك دون أي نقل."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "كيف يمكنني طلب خدمة صيانة أجهزة اريستون عبر واتساب؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "يمكنك بكل سهولة التواصل معنا عبر زر واتساب المباشر بالموقع أو إرسال تفاصيل عطل جهاز Ariston وعنوانك لتنسيق الزيارة."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "ما هي أنواع أجهزة Ariston التي يشملها الدعم الفني؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "نغطي كافة أجهزة اريستون وتشمل: غسالات الملابس، الثلاجات، السخانات، البوتاجازات وأفران بلت إن، وغسالات الأطباق."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "كم يستغرق وصول الفني المتخصص بعد تسجيل الطلب؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "بفضل الانتشار الجغرافي لفرقنا، يصلكم الفني غالباً في نفس اليوم أو خلال ساعات معدودة من تأكيد الطلب."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "هل قطع الغيار المستخدمة في صيانة اريستون مطابقة للمواصفات؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "نعم، نحرص على تزويد فنيينا بقطع غيار بديلة عالية الجودة ومطابقة لمواصفات التشغيل الخاصة بأجهزة Ariston."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "ما هي مواعيد العمل الرسمية واستقبال طلبات الدعم؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "نستقبل رسائلكم واستفساراتكم وطلبات الصيانة يومياً من الساعة 08:00 صباحاً وحتى الساعة 01:00 بعد منتصف الليل."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "هل يتم تقديم إيصال خدمة ومتابعة دورية بعد إتمام الإصلاح؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "نعم، يتسلم العميل إيصال خدمة ومتابعة دورية بعد الانتهاء من أعمال الإصلاح وتركيب قطع الغيار."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "لماذا تختار مركز صيانة أجهزة اريستون للأجهزة المنزلية؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "لأننا نوفر سرعة الاستجابة، الفحص في القاهرة والجيزة والإسكندرية، والاعتماد على مهندسين ذوي خبرة عالية."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://ariston.maintenance-eg.net/#website",
+      "url": "https://ariston.maintenance-eg.net/",
+      "name": "مركز صيانة أجهزة اريستون",
+      "inLanguage": "ar-EG",
+      "publisher": {
+        "@id": "https://ariston.maintenance-eg.net/#business"
       }
-    ]
-  }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ariston.maintenance-eg.net/#webpage",
+      "url": "https://ariston.maintenance-eg.net/",
+      "name": "مركز صيانة أجهزة اريستون",
+      "inLanguage": "ar-EG",
+      "isPartOf": {
+        "@id": "https://ariston.maintenance-eg.net/#website"
+      },
+      "about": {
+        "@id": "https://ariston.maintenance-eg.net/#business"
+      },
+      "mainEntity": {
+        "@id": "https://ariston.maintenance-eg.net/#business"
+      },
+      "description": "خدمات صيانة أجهزة اريستون المنزلية ومناطق التغطية ومعلومات التواصل وطلب الصيانة.",
+      "hasPart": {
+        "@id": "https://ariston.maintenance-eg.net/#faq"
+      }
+    }
+  ]
+}
   </script>
 </head>
 <body class="bg-slate-50 text-slate-800 antialiased selection:bg-aristonRed selection:text-white pb-24 sm:pb-0">
@@ -852,6 +1032,8 @@
             <h3 class="text-lg font-black text-slate-900 mb-2">مركز صيانة أجهزة اريستون</h3>
             <ul class="space-y-2.5 text-slate-700 text-xs sm:text-sm">
               <li><strong>الاسم:</strong> مركز صيانة أجهزة اريستون</li>
+              <li><strong>العنوان:</strong> شارع عمر لطفي، مدينة نصر، القاهرة، مصر</li>
+              <li><strong>موقع المركز على الخرائط:</strong> <a href="https://www.google.com/maps?cid=4821820590068200359" target="_blank" rel="noopener noreferrer" class="text-aristonRed underline">عرض موقع مركز صيانة أجهزة اريستون على Google Maps</a></li>
               <li><strong>نطاق الخدمة:</strong> تغطية لأحياء ومناطق القاهرة، الجيزة والإسكندرية</li>
               <li><strong>طريقة التواصل:</strong> عبر الواتساب أو نموذج حجز الزيارة</li>
               <li><strong>ساعات العمل والاستقبال:</strong> 7 أيام في الأسبوع من 08:00 صباحاً حتى 01:00 صباحاً</li>
@@ -865,6 +1047,22 @@
           <div class="relative w-full h-[450px]">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3304.8737670556307!2d31.3310081!3d30.0581998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14583f48a9897cc5%3A0x42ea8c4791adf3a7!2z2YXYsdmD2LIg2LXZitin2YbYqSDYp9is2YfYstipINin2LHZitiz2KrZiNmG!5e1!3m2!1sen!2seg!4v1795474780630!5m2!1sen!2seg" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" title="خريطة مركز صيانة أجهزة اريستون"></iframe>
           </div>
+        </div>
+      </div>
+
+      <div class="mt-6 rounded-2xl border border-slate-200 bg-white px-5 py-5" aria-label="ملفات هوية مركز صيانة أجهزة اريستون">
+        <h3 class="font-bold text-slate-900 text-sm mb-2">الملفات التعريفية لمركز صيانة أجهزة اريستون</h3>
+        <p class="text-xs text-slate-600 mb-3">حسابات وصفحات تعريف المركز على المنصات الخارجية.</p>
+        <div class="flex flex-wrap gap-x-5 gap-y-3 text-xs" dir="ltr">
+              <a href="https://www.crunchbase.com/organization/مركز-صيانة-اجهزة-اريستون" target="_blank" rel="noopener noreferrer" class="text-slate-600 hover:text-aristonRed underline underline-offset-2">Crunchbase</a>
+              <a href="https://x.com/aristonfix" target="_blank" rel="noopener noreferrer" class="text-slate-600 hover:text-aristonRed underline underline-offset-2">X</a>
+              <a href="https://github.com/ariston-fix-center" target="_blank" rel="noopener noreferrer" class="text-slate-600 hover:text-aristonRed underline underline-offset-2">GitHub</a>
+              <a href="https://www.linkedin.com/company/aristonfix" target="_blank" rel="noopener noreferrer" class="text-slate-600 hover:text-aristonRed underline underline-offset-2">LinkedIn</a>
+              <a href="https://www.openstreetmap.org/node/6572400070" target="_blank" rel="noopener noreferrer" class="text-slate-600 hover:text-aristonRed underline underline-offset-2">OpenStreetMap</a>
+              <a href="https://wikimapia.org/#lang=en&amp;lat=30.057963&amp;lon=31.330430&amp;z=19&amp;m=w&amp;show=/43723277/ar&amp;search=Omar%20Lotfy" target="_blank" rel="noopener noreferrer" class="text-slate-600 hover:text-aristonRed underline underline-offset-2">Wikimapia</a>
+              <a href="https://mapcreator.here.com/place:gO7aH2ToswmdBCgJ/?l=30.0582,31.3309,20,normal" target="_blank" rel="noopener noreferrer" class="text-slate-600 hover:text-aristonRed underline underline-offset-2">HERE Maps</a>
+              <a href="https://linktr.ee/aristonfix" target="_blank" rel="noopener noreferrer" class="text-slate-600 hover:text-aristonRed underline underline-offset-2">Linktree</a>
+              <a href="https://gitlab.com/aristonfix" target="_blank" rel="noopener noreferrer" class="text-slate-600 hover:text-aristonRed underline underline-offset-2">GitLab</a>
         </div>
       </div>
 
@@ -1199,5 +1397,6 @@
       }
     }
   </script>
+
 </body>
 </html>
