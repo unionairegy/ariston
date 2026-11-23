@@ -695,79 +695,114 @@
   </section>
 
   <!-- Contact Form Section -->
-  <section id="booking-section" class="py-16 px-4 bg-slate-900 text-white">
-    <div class="max-w-3xl mx-auto">
-      <div class="bg-gradient-to-br from-[#0a192f] via-[#0d213f] to-[#112240] rounded-3xl p-6 sm:p-10 border-2 border-aristonRed/40 shadow-2xl relative overflow-hidden">
-        <div class="absolute -top-16 -right-16 w-44 h-44 bg-aristonRed/10 rounded-full blur-2xl pointer-events-none"></div>
-        <div class="relative z-10">
-          <div class="flex flex-wrap items-center justify-between gap-3 mb-8 pb-4 border-b border-slate-700">
+  <section id="booking-section" class="py-16 px-4 bg-[#0f172a] text-white">
+    <div class="max-w-4xl mx-auto">
+      <div class="bg-[#111827] rounded-3xl p-6 sm:p-10 border border-slate-800 shadow-2xl">
+
+        <!-- Top Badge & Heading -->
+        <div class="text-center mb-8">
+          <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-slate-800/90 border border-slate-700 text-sky-400 text-xs sm:text-sm font-bold mb-4">
+            <span>⚡</span>
+            <span>تغطية شاملة لجميع مناطق القاهرة، الجيزة، والإسكندرية</span>
+          </div>
+          <h2 class="text-2xl sm:text-3xl font-black text-white mb-2">
+            تسجيل بلاغ صيانة منزلية
+          </h2>
+          <p class="text-slate-400 text-xs sm:text-sm">
+            أرسل بياناتك لطلب التواصل وتأكيد الموعد حسب توافر الفنيين. إرسال النموذج لا يؤكد الحجز تلقائياً.
+          </p>
+        </div>
+
+        <form id="maintenanceForm" action="https://formsubmit.co/ed3mnyit@gmail.com" method="POST" class="space-y-5" onsubmit="handleFormSubmission(event)">
+          <input type="hidden" name="_subject" value="تسجيل بلاغ صيانة منزلية - مركز صيانة أجهزة اريستون">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_template" value="table">
+
+          <!-- Row 1: الاسم بالكامل & رقم الهاتف للتواصل -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
             <div>
-              <span class="inline-block bg-aristonRed/20 text-rose-300 border border-aristonRed/30 text-xs font-bold px-3 py-1 rounded-full mb-2">
-                حجز زيارة
-              </span>
-              <h2 class="text-xl sm:text-2xl font-black text-white">طلب فحص وصيانة لأجهزة اريستون</h2>
+              <label for="custName" class="flex items-center gap-1.5 text-xs sm:text-sm font-bold text-white mb-2">
+                <i class="fa-solid fa-user text-sky-400"></i>
+                <span>الاسم بالكامل *</span>
+              </label>
+              <input type="text" id="custName" name="اسم_العميل" required placeholder="اكتب اسمك الكريم" class="w-full px-4 py-3.5 rounded-xl bg-white border border-slate-300 text-slate-900 placeholder-slate-400 text-sm font-semibold focus:outline-none focus:ring-2 focus:ring-aristonRed">
             </div>
-            <div class="text-left">
-              <span class="text-aristonRed text-xs font-semibold block">توجيه الفني المتخصص</span>
-              <span class="text-slate-300 text-[11px]">يؤكد الموعد عند التواصل</span>
+
+            <div>
+              <label for="custPhone" class="flex items-center gap-1.5 text-xs sm:text-sm font-bold text-white mb-2">
+                <i class="fa-solid fa-mobile-screen-button text-rose-400"></i>
+                <span>رقم الهاتف للتواصل *</span>
+              </label>
+              <input type="tel" id="custPhone" name="رقم_التليفون" required placeholder="مثال: 01156174546" dir="ltr" class="w-full px-4 py-3.5 rounded-xl bg-white border border-slate-300 text-slate-900 placeholder-slate-400 text-sm font-semibold text-right focus:outline-none focus:ring-2 focus:ring-aristonRed">
             </div>
           </div>
 
-          <form id="maintenanceForm" action="https://formsubmit.co/ed3mnyit@gmail.com" method="POST" class="space-y-4" onsubmit="handleFormSubmission(event)">
-            <input type="hidden" name="_subject" value="طلب صيانة أجهزة اريستون جديد">
-            <input type="hidden" name="_captcha" value="false">
-            <input type="hidden" name="_template" value="table">
-
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <div>
-                <label for="custName" class="block text-xs font-bold text-slate-200 mb-1.5">الاسم بالكامل *</label>
-                <input type="text" id="custName" name="اسم_العميل" required placeholder="أدخل اسمك الكريم" class="w-full px-3 py-3 rounded-xl bg-slate-900/90 border border-slate-600 text-white text-sm focus:outline-none focus:border-aristonRed">
-              </div>
-              <div>
-                <label for="custPhone" class="block text-xs font-bold text-slate-200 mb-1.5">رقم التليفون للتواصل *</label>
-                <input type="tel" id="custPhone" name="رقم_التليفون" required placeholder="01xxxxxxxxx" dir="ltr" class="w-full px-3 py-3 rounded-xl bg-slate-900/90 border border-slate-600 text-white text-sm text-right focus:outline-none focus:border-aristonRed">
-              </div>
-            </div>
-
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <div>
-                <label for="applianceType" class="block text-xs font-bold text-slate-200 mb-1.5">اختر الجهاز المطلوب صيانته *</label>
-                <select id="applianceType" name="نوع_الجهاز" required class="w-full px-3 py-3 rounded-xl bg-slate-900/90 border border-slate-600 text-white text-sm focus:outline-none focus:border-aristonRed">
-                  <option value="" disabled selected class="text-slate-400">اختر الجهاز</option>
-                  <option value="صيانة غسالات اريستون">صيانة غسالات اريستون</option>
-                  <option value="صيانة ثلاجات اريستون">صيانة ثلاجات اريستون</option>
-                  <option value="صيانة سخانات اريستون">صيانة سخانات اريستون</option>
-                  <option value="صيانة بوتاجازات وأفران اريستون">صيانة بوتاجازات وأفران اريستون</option>
-                  <option value="صيانة غسالات أطباق وميكروويف اريستون">صيانة غسالات أطباق وميكروويف اريستون</option>
-                </select>
-              </div>
-              <div>
-                <label for="areaLocation" class="block text-xs font-bold text-slate-200 mb-1.5">المنطقة (القاهرة، الجيزة، الإسكندرية) *</label>
-                <input type="text" id="areaLocation" name="منطقة_الخدمة" required placeholder="مثال: مدينة نصر، الهرم، سموحة..." class="w-full px-3 py-3 rounded-xl bg-slate-900/90 border border-slate-600 text-white text-sm focus:outline-none focus:border-aristonRed">
-              </div>
+          <!-- Row 2: نوع الجهاز المعطل & الموعد المفضل للزيارة -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+            <div>
+              <label for="applianceType" class="flex items-center gap-1.5 text-xs sm:text-sm font-bold text-white mb-2">
+                <i class="fa-solid fa-gear text-slate-400"></i>
+                <span>نوع الجهاز المعطل *</span>
+              </label>
+              <select id="applianceType" name="نوع_الجهاز" required class="w-full px-4 py-3.5 rounded-xl bg-white border border-slate-300 text-slate-900 text-sm font-semibold focus:outline-none focus:ring-2 focus:ring-aristonRed">
+                <option value="" disabled selected>اختر جهاز اريستون...</option>
+                <option value="صيانة غسالات اريستون">صيانة غسالات اريستون</option>
+                <option value="صيانة ثلاجات اريستون">صيانة ثلاجات اريستون</option>
+                <option value="صيانة سخانات اريستون">صيانة سخانات اريستون</option>
+                <option value="صيانة بوتاجازات وأفران اريستون">صيانة بوتاجازات وأفران اريستون</option>
+                <option value="صيانة غسالات أطباق وميكروويف اريستون">صيانة غسالات أطباق وميكروويف اريستون</option>
+              </select>
             </div>
 
             <div>
-              <label for="issueDetails" class="block text-xs font-bold text-slate-200 mb-1.5">وصف العطل أو كود الخطأ (اختياري)</label>
-              <textarea id="issueDetails" name="وصف_العطل" rows="2" placeholder="اكتب كود العطل أو تفاصيل المشكلة باختصار..." class="w-full p-3 rounded-xl bg-slate-900/90 border border-slate-600 text-white text-sm focus:outline-none focus:border-aristonRed"></textarea>
+              <label for="preferredTime" class="flex items-center gap-1.5 text-xs sm:text-sm font-bold text-white mb-2">
+                <i class="fa-regular fa-clock text-amber-400"></i>
+                <span>الموعد المفضل للزيارة *</span>
+              </label>
+              <select id="preferredTime" name="الموعد_المفضل" required class="w-full px-4 py-3.5 rounded-xl bg-white border border-slate-300 text-slate-900 text-sm font-semibold focus:outline-none focus:ring-2 focus:ring-aristonRed">
+                <option value="طارئ / بأسرع وقت اليوم" selected>⚡ طارئ / بأسرع وقت اليوم</option>
+                <option value="الفترة الصباحية (08:00 ص – 02:00 م)">الفترة الصباحية (08:00 ص – 02:00 م)</option>
+                <option value="الفترة المسائية (02:00 م – 08:00 م)">الفترة المسائية (02:00 م – 08:00 م)</option>
+                <option value="الفترة الليلية (08:00 م – 01:00 ص)">الفترة الليلية (08:00 م – 01:00 ص)</option>
+                <option value="غداً في أقرب موعد متاح">غداً في أقرب موعد متاح</option>
+              </select>
             </div>
+          </div>
 
-            <div class="pt-2 flex flex-col sm:flex-row items-center gap-3">
-              <button type="submit" id="submitBtn" class="w-full sm:flex-1 bg-gradient-to-r from-aristonRed to-rose-600 text-white font-black py-3.5 px-6 rounded-xl shadow-lg text-base">
-                <span id="btnText">إرسال طلب الزيارة</span>
-              </button>
-              <a href="https://wa.me/201156174546" target="_blank" rel="noopener" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-3.5 px-5 rounded-xl text-sm">
-                <i class="fa-brands fa-whatsapp text-lg"></i>
-                <span>تواصل واتساب</span>
-              </a>
-            </div>
+          <!-- Row 3: العنوان بالتفصيل -->
+          <div>
+            <label for="areaLocation" class="flex items-center gap-1.5 text-xs sm:text-sm font-bold text-white mb-2">
+              <i class="fa-solid fa-location-dot text-rose-500"></i>
+              <span>العنوان بالتفصيل (القاهرة، الجيزة، أو الإسكندرية) *</span>
+            </label>
+            <input type="text" id="areaLocation" name="منطقة_الخدمة" required placeholder="مثال: مدينة نصر، المعادي، المهندسين، فيصل، 6 أكتوبر، سموحة..." class="w-full px-4 py-3.5 rounded-xl bg-white border border-slate-300 text-slate-900 placeholder-slate-400 text-sm font-semibold focus:outline-none focus:ring-2 focus:ring-aristonRed">
+          </div>
 
-            <div id="formSuccessMessage" class="hidden p-4 rounded-xl bg-emerald-950/80 border border-emerald-500 text-emerald-200 text-xs sm:text-sm text-center">
-              <i class="fa-solid fa-circle-check text-emerald-400 text-lg ml-1"></i>
-              تم إرسال طلبكم بنجاح، وسيتم التواصل معكم لتنسيق الموعد حسب التوافر.
-            </div>
-          </form>
-        </div>
+          <!-- Row 4: وصف المشكلة أو مظهر العطل -->
+          <div>
+            <label for="issueDetails" class="flex items-center gap-1.5 text-xs sm:text-sm font-bold text-white mb-2">
+              <i class="fa-solid fa-clipboard-list text-amber-300"></i>
+              <span>وصف المشكلة أو مظهر العطل *</span>
+            </label>
+            <textarea id="issueDetails" name="وصف_العطل" rows="3" required placeholder="وضح المشكلة أو كود الخطأ الظاهر (مثال: الغسالة لا تطرد المياه F05، الثلاجة لا تبرد A1، السخان لا يسخن...)" class="w-full p-4 rounded-xl bg-white border border-slate-300 text-slate-900 placeholder-slate-400 text-sm font-semibold focus:outline-none focus:ring-2 focus:ring-aristonRed"></textarea>
+          </div>
+
+          <!-- Submit & WhatsApp Actions -->
+          <div class="pt-2 flex flex-col sm:flex-row items-center gap-3">
+            <button type="submit" id="submitBtn" class="w-full sm:flex-1 bg-gradient-to-r from-aristonRed to-rose-600 hover:from-aristonDarkRed hover:to-rose-700 text-white font-black py-4 px-6 rounded-xl shadow-lg text-base transition-all cursor-pointer">
+              <span id="btnText">إرسال بلاغ الصيانة</span>
+            </button>
+            <a href="https://wa.me/201156174546" target="_blank" rel="noopener" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-4 px-6 rounded-xl text-sm transition-all">
+              <i class="fa-brands fa-whatsapp text-xl"></i>
+              <span>تواصل واتساب مباشر</span>
+            </a>
+          </div>
+
+          <div id="formSuccessMessage" class="hidden p-4 rounded-xl bg-emerald-950/90 border border-emerald-500 text-emerald-200 text-xs sm:text-sm text-center font-semibold">
+            <i class="fa-solid fa-circle-check text-emerald-400 text-lg ml-1"></i>
+            تم تسجيل بلاغكم بنجاح، وسيتم التواصل معكم لتأكيد الموعد حسب توافر الفنيين.
+          </div>
+        </form>
       </div>
 
       <!-- خطوات طلب الخدمة -->
@@ -1136,7 +1171,7 @@
         if (response.ok) {
           successBox.classList.remove('hidden');
           form.reset();
-          btnText.innerText = "تم إرسال الطلب بنجاح";
+          btnText.innerText = "تم تسجيل البلاغ بنجاح";
         } else {
           form.submit();
         }
@@ -1144,7 +1179,7 @@
         form.submit();
       } finally {
         setTimeout(() => {
-          btnText.innerText = "إرسال طلب الزيارة";
+          btnText.innerText = "إرسال بلاغ الصيانة";
           submitBtn.disabled = false;
         }, 4000);
       }
